@@ -1,7 +1,5 @@
 let mongoose = require('mongoose')
 
-
-
 let relativeSchema = new mongoose.Schema({
     firstName: String,
     lastName:String,
@@ -19,7 +17,7 @@ let relativeSchema = new mongoose.Schema({
     employerCountry:String,
     employerPhone:String,
     relationWithStudent:String,
-    isPrimary:{type:Boolean, deffalse:false}
+    isPrimary:{type:Boolean, default:false}
 
 })
 

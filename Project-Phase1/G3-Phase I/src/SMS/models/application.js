@@ -1,7 +1,7 @@
 let mongoose = require('mongoose')
 
 let attachmentSchema = new mongoose.Schema({
-    applicationTitle: String,
+    title: String,
     addedOn: {type: Date, default : Date.now},
     url: String
 })
@@ -26,7 +26,7 @@ let applicationSchema = new mongoose.Schema({
     academicYear: [{ type : mongoose.Schema.ObjectId, ref : 'academicYear' }],
     status: String,
     applicationDate: {type: Date, default : Date.now},
-    nameOfCurrectSchool:String,
+    nameOfCurrentSchool:String,
     currentGrade:String,
     gradeApplyingFor: String,
     updatedDate: {type: Date, default : Date.now},

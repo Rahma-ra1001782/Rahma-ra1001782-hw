@@ -8,7 +8,6 @@ class smsRepository {
 
     async addStudent(newStudent) {
         return await Student.create(newStudent)
-
     }
 
     async getStudents() {
@@ -189,16 +188,16 @@ class smsRepository {
         for(let app of applications) {
             let studentObj = students.shift()
             let studentID = studentObj.studentId;
+            let studentStatus = studentObj.status;
             let studentLastName = studentObj.lastName;
             let academicYear = studentObj.studentId.toString().substr(0, 4);
 
             const studentid = await this.getStudent(studentID)
-
-
             let academicYr = await this.getAcademicYear(academicYear)
             let submittedBy = await this.getPrimaryRelative(studentLastName)
 
             app.student = studentid
+            app.status= studentStatus
             app.studentID = studentID
             app.academicYear = academicYr
             app.submittedBy =submittedBy
