@@ -16,7 +16,7 @@
     "employerCountry": "Argentina",
     "employerPhone": "705-798-7096",
     "relationWithStudent": "mother",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -28,7 +28,7 @@
     "homePhone": "975-107-4600",
     "mobile": "921-254-6454",
     "street": "4 Caliangt Center",
-    "city": "Hisings Kärra",
+    "city": "Hisings Kï¿½rra",
     "country": "Sweden",
     "occupation": "Research Nurse",
     "nameOfEmployer": "Edward Sawney",
@@ -36,7 +36,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "785-711-4495",
     "relationWithStudent": "uncle",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 1393
   },
   {
@@ -56,7 +56,7 @@
     "employerCountry": "Vanuatu",
     "employerPhone": "608-523-6274",
     "relationWithStudent": "uncle",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 5477
   },
   {
@@ -76,7 +76,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "688-411-9268",
     "relationWithStudent": "aunt",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 9745
   },
   {
@@ -88,7 +88,7 @@
     "homePhone": "468-581-7436",
     "mobile": "661-121-1228",
     "street": "3881 Ridgeview Circle",
-    "city": "Dolní Lhota",
+    "city": "Dolnï¿½ Lhota",
     "country": "Czech Republic",
     "occupation": "Community Outreach Specialist",
     "nameOfEmployer": "John Smith",
@@ -96,7 +96,7 @@
     "employerCountry": "China",
     "employerPhone": "100-413-7885",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 8152
   },
   {
@@ -116,7 +116,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "511-736-0361",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 6791
   },
   {
@@ -136,7 +136,7 @@
     "employerCountry": "Marshall Islands",
     "employerPhone": "812-989-9195",
     "relationWithStudent": "aunt",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -156,7 +156,7 @@
     "employerCountry": "Colombia",
     "employerPhone": "552-326-4941",
     "relationWithStudent": "father",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -172,11 +172,11 @@
     "country": "Thailand",
     "occupation": "Dental Hygienist",
     "nameOfEmployer": "Loki Rose",
-    "employerCity": "Colonia Mauricio José Troche",
+    "employerCity": "Colonia Mauricio Josï¿½ Troche",
     "employerCountry": "Paraguay",
     "employerPhone": "233-815-1600",
     "relationWithStudent": "mother",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 9503
   },
   {
@@ -196,7 +196,7 @@
     "employerCountry": "Argentina",
     "employerPhone": "973-808-2885",
     "relationWithStudent": "aunt",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 8665
   },
   {
@@ -216,7 +216,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "277-803-8219",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 2138
   },
   {
@@ -236,7 +236,7 @@
     "employerCountry": "Latvia",
     "employerPhone": "984-667-5272",
     "relationWithStudent": "uncle",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -256,7 +256,7 @@
     "employerCountry": "Colombia",
     "employerPhone": "256-172-4001",
     "relationWithStudent": "father",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -268,7 +268,7 @@
     "homePhone": "692-189-5191",
     "mobile": "290-765-6089",
     "street": "91721 Sugar Road",
-    "city": "Budzów",
+    "city": "Budzï¿½w",
     "country": "Poland",
     "occupation": "Civil Engineer",
     "nameOfEmployer": "Louis Waycott",
@@ -276,7 +276,7 @@
     "employerCountry": "Belarus",
     "employerPhone": "705-435-5920",
     "relationWithStudent": "mother",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -288,7 +288,7 @@
     "homePhone": "717-262-5691",
     "mobile": "407-688-7109",
     "street": "5 Stephen Plaza",
-    "city": "Tasböget",
+    "city": "Tasbï¿½get",
     "country": "Kazakhstan",
     "occupation": "Analog Circuit Design manager",
     "nameOfEmployer": "Bruno Mars",
@@ -296,7 +296,7 @@
     "employerCountry": "Sweden",
     "employerPhone": "128-938-0795",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 2365
   },
   {
@@ -316,7 +316,7 @@
     "employerCountry": "Japan",
     "employerPhone": "310-667-3671",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 5102
   },
   {
@@ -336,7 +336,7 @@
     "employerCountry": "Brazil",
     "employerPhone": "561-362-8006",
     "relationWithStudent": "mother",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 9088
   },
   {
@@ -356,7 +356,7 @@
     "employerCountry": "Vietnam",
     "employerPhone": "492-976-9717",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 1867
   },
   {
@@ -376,7 +376,7 @@
     "employerCountry": "Philippines",
     "employerPhone": "883-678-6144",
     "relationWithStudent": "uncle",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 4694
   },
   {
@@ -396,7 +396,7 @@
     "employerCountry": "Russia",
     "employerPhone": "154-135-6497",
     "relationWithStudent": "aunt",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 5299
   },
   {
@@ -416,7 +416,7 @@
     "employerCountry": "Finland",
     "employerPhone": "216-954-1837",
     "relationWithStudent": "aunt",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 4627
   },
   {
@@ -436,7 +436,7 @@
     "employerCountry": "Ukraine",
     "employerPhone": "131-128-1051",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 2620
   },
   {
@@ -452,11 +452,11 @@
     "country": "South Africa",
     "occupation": "Account Coordinator",
     "nameOfEmployer": "Melody Tamato",
-    "employerCity": "Mikhnëvo",
+    "employerCity": "Mikhnï¿½vo",
     "employerCountry": "Russia",
     "employerPhone": "834-567-8665",
     "relationWithStudent": "mother",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 5421
   },
   {
@@ -468,7 +468,7 @@
     "homePhone": "158-240-4428",
     "mobile": "137-285-7335",
     "street": "32 Lerdahl Pass",
-    "city": "Ängelholm",
+    "city": "ï¿½ngelholm",
     "country": "Sweden",
     "occupation": "Media Manager IV",
     "nameOfEmployer": "Zoey Melanie",
@@ -476,7 +476,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "385-347-8813",
     "relationWithStudent": "father",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 8073
   },
   {
@@ -496,7 +496,7 @@
     "employerCountry": "Philippines",
     "employerPhone": "406-372-0507",
     "relationWithStudent": "uncle",
-    "isPrimary": "TRUE",
+    "isPrimary": true,
     "password": 2722
   },
   {
@@ -516,7 +516,7 @@
     "employerCountry": "Paraguay",
     "employerPhone": "310-667-3671",
     "relationWithStudent": "mother",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -536,7 +536,7 @@
     "employerCountry": "Philippines",
     "employerPhone": "883-678-6144",
     "relationWithStudent": "aunt",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -556,7 +556,7 @@
     "employerCountry": "Finland",
     "employerPhone": "216-954-1837",
     "relationWithStudent": "uncle",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   },
   {
@@ -568,7 +568,7 @@
     "homePhone": "158-240-4428",
     "mobile": "137-285-7335",
     "street": "32 Lerdahl Pass",
-    "city": "Ängelholm",
+    "city": "ï¿½ngelholm",
     "country": "Sweden",
     "occupation": "Media Manager IV",
     "nameOfEmployer": "Edward Sawney",
@@ -576,7 +576,7 @@
     "employerCountry": "Indonesia",
     "employerPhone": "385-347-8813",
     "relationWithStudent": "mother",
-    "isPrimary": "FALSE",
+    "isPrimary": false,
     "password": ""
   }
 ]

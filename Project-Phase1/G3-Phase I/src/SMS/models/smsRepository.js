@@ -1,6 +1,6 @@
 const AcademicYear = require('./AcademicYear')
 const Application = require('./application')
-const Relative = require('./Relative')
+const Relative = require('./relative')
 const Staff = require('./staff')
 const Student = require('./student')
 
@@ -47,9 +47,33 @@ class smsRepository {
         return await AcademicYear.create(newAcademicYear)
     }
 
+    async addApplication(newApplication) {
+        return await Application.create(newApplication)
+    }
+
+
+
     async getAcademicYears() {
         return await AcademicYear.find({})
     }
+
+
+
+    async getAcademicYear(title) {
+        const query = AcademicYear.findOne({}, "_id")
+        //If lastName is defined then filter by lastName
+        if (title) {
+            query.where({title: title})
+        }
+        return query
+
+    }
+
+
+
+
+
+
 
     async getAcademicYearCount() {
         return await AcademicYear.count({})
@@ -66,11 +90,31 @@ class smsRepository {
         return query
     }
 
+
+    getPrimaryRelative(lastname) {
+
+        const query = Relative.findOne({lastName: lastname, isPrimary: true}, "_id")
+
+        return query
+    }
+
+    getStudent(studentID){
+        const query = Student.findOne({}, "_id")
+        if (studentID) {
+            query.where({studentId: studentID})
+        }
+        return query
+    }
+
+
     //in case needed during testing
     async emptyDB() {
         await Student.remove({})
         await Staff.remove({})
         await Relative.remove({})
+        await AcademicYear.remove({})
+        await Application.remove({})
+
     }
 
     async initDb() {
@@ -134,6 +178,36 @@ class smsRepository {
         for (const year of academicYears) {
             await this.addAcademicYear(year)
         }
+
+
+        //Adding Applications
+        const applicationData = await fs.readFile('data/application.json')
+        const applications = JSON.parse(applicationData)
+
+        console.log('Retrieved Applications from json file and added to MongoDB Application Collection: ' + applications.length)
+
+        for(let app of applications) {
+            let studentObj = students.shift()
+            let studentID = studentObj.studentId;
+            let studentLastName = studentObj.lastName;
+            let academicYear = studentObj.studentId.toString().substr(0, 4);
+
+            const studentid = await this.getStudent(studentID)
+
+
+            let academicYr = await this.getAcademicYear(academicYear)
+            let submittedBy = await this.getPrimaryRelative(studentLastName)
+
+            app.student = studentid
+            app.studentID = studentID
+            app.academicYear = academicYr
+            app.submittedBy =submittedBy
+
+            await this.addApplication(app)
+
+
+        }
+
 
     }
 }
