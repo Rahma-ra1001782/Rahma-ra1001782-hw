@@ -22,7 +22,7 @@ let admissionTestSchema= new mongoose.Schema({
 
 let applicationSchema = new mongoose.Schema({
     studentID: Number,
-    student: { type : mongoose.Schema.ObjectId, ref : 'Student' },
+    student: { type : mongoose.Schema.ObjectId, ref : 'Student' } ,
     academicYear: [{ type : mongoose.Schema.ObjectId, ref : 'academicYear' }],
     status: String,
     applicationDate: {type: Date, default : Date.now},
@@ -31,8 +31,8 @@ let applicationSchema = new mongoose.Schema({
     gradeApplyingFor: String,
     updatedDate: {type: Date, default : Date.now},
     submittedBy: { type : mongoose.Schema.ObjectId, ref : 'Relative' },
-    attachment:[attachmentSchema],
-    notes:[noteSchema],
+    attachment:[attachmentSchema], //list of attachments
+    notes:[noteSchema], //list of notes 
     admissionTests:[admissionTestSchema]
 })
 
