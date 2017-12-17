@@ -46,10 +46,10 @@ app.set('view engine', 'hbs')
 app.set('views', __dirname + '/views')
 
 
-/*TODO : define admission modules routes */
-/*Mount the routes to the app
+
+//Mount the routes to the app
 const routes = require('./routes')
-app.use('/', routes)*/
+app.use('/', routes)
 
 const port = 3322
 

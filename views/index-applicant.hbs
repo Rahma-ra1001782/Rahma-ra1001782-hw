@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav id="mainMenu" class="navbar navbar-inverse navbar-static-top">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="navbar-brand" href="/">
+                        SMS
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/applications/new"> Add Application </a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <img src="/views/css/assets/images/placeholder.jpg" alt="">
+                            <span> Welcome {{username}}</span>
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/profile"><i class="fa fa-user" aria-hidden="true"></i>  Profile</a></li>
+                            <li><a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+</div>
+
+
+<div class="container">
+    <div id="applications-list">
+
+            <h2> Applications List</h2>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age </th>
+                    <th>Status </th>
+                    <th></th>
+                </tr>
+            {{#apps}}
+                <tr data-heroid="{{id}}">
+                    <td> {{ FirstName }}  {{LastName}}</td>
+                    <td>{{ age }}</td>
+                    <td>{{ status }}</td>
+                    <td style="text-align: center;">
+                        <button onclick="displayStudent({{studentId}})" class="btn btn-default">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                        </button>
+                        <a href="/applications/1" class="btn btn-default">   <!-- IP -->
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a>
+                        <button onclick="deleteApplication()" class="btn btn-default">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </button>
+                        <button onclick="addAttachment()" class="btn btn-default">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                        </button>
+                        <button onclick="addNotes()" class="btn btn-default">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                        </button>
+
+
+                    </td>
+                </tr>
+            {{/apps}}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+<dialog id="attachment-dialog" style="display: none"></dialog>
+<dialog id="note-dialog" style="display: none"></dialog>
+
+
+
+
+<script type="text/javascript" src="../views/js/application.js"></script>

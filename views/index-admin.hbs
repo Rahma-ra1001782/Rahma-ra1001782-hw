@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav id="mainMenu" class="navbar navbar-inverse navbar-static-top">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="navbar-brand" href="/">
+                        SMS
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modules<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/applications">Applications</a></li>
+                        <li><a href="/reports">Reports</a>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <img src="/css/assets/images/placeholder.jpg" alt="">
+                        <span> Welcome {{username}}</span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/update"><i class="fa fa-user" aria-hidden="true"></i>  Profile</a></li>
+                        <li><a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <article class="col-md-6">
+
+            <section >
+                <figure>
+                    <a href="/reports"> <img class="center-block img-responsive" src="../../resources/reports_img.jpg" class="img-responsive" width="70%" height="70%" ></a>
+
+                </figure>
+
+
+
+            </section>
+        </article>
+
+        <article class="col-md-6">
+
+
+            <section >
+                <figure>
+                    <a href="/applications"><img class="center-block img-responsive" src="../../resources/applications_img.jpg" class="img-responsive" width="70%" height="70%" ></a>
+
+                </figure>
+            </section>
+        </article>
+    </div>
+</div>

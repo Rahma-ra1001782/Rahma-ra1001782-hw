@@ -1,0 +1,19 @@
+form fieldset {
+    border: 1px solid #ddd !important;
+    padding: 10px;
+    border-radius: 4px;
+}
+form legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: auto;
+    border-bottom: 0px;
+    padding: 10px;
+}
+form {
+    max-width:700px;
+}
+form label {
+    text-align: left;
+}
